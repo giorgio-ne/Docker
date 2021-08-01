@@ -3,6 +3,7 @@ RUN apt-get update && apt-get install -yq unzip && apt-get install -yq binutils 
 RUN mkdir -p /zOSv1r11
 WORKDIR /zOSv1r11/
 MAINTAINER Giorgio Negro
-LABEL version=1.00
+LABEL version=1.01
 LABEL description=IBM z/OS v1 r11
+CMD ["/zOSv1r11/startzOS"]
 EXPOSE 3270 8081
