@@ -1,0 +1,8 @@
+CMD ["bash"]
+RUN apt-get update && apt-get install -yq unzip && apt-get install -yq binutils && apt-get install -yq hercules
+RUN mkdir -p /zOSv1r11
+WORKDIR /zOSv1r11/
+MAINTAINER Giorgio Negro
+LABEL version=1.00
+LABEL description=IBM z/OS v1 r11
+EXPOSE 3270 8081
